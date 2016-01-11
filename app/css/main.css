@@ -1,0 +1,52 @@
+.biografy-ul > li{
+    display: block;
+}
+.biografy-ul > li > strong{
+    font-size: 22px;
+}
+.biografy-ul > li {
+    text-align: justify;
+    font-size: 18px;
+}
+.biografy-ul{
+    padding-left: 0;
+}
+
+@-webkit-keyframes scroll {
+    0% { opacity: .8; -webkit-transform: translateY(0); }
+   60% { opacity: .6; }
+  100% { opacity: 0; -webkit-transform: translateY(8px); }
+}
+@-moz-keyframes scroll {
+    0% { opacity: .8; -moz-transform: translateY(0); }
+   60% { opacity: .6; }
+  100% { opacity: 0; -moz-transform: translateY(8px); }
+}
+@-ms-keyframes scroll {
+    0% { opacity: .8; -ms-transform: translateY(0); }
+   60% { opacity: .6; }
+  100% { opacity: 0; -ms-transform: translateY(8px); }
+}
+@keyframes scroll {
+    0% { opacity: .8; transform: translateY(0); }
+   60% { opacity: .6; }
+  100% { opacity: 0; transform: translateY(8px); }
+}
+
+.next-section {
+position: absolute;	
+	bottom:30px;
+
+	cursor: pointer;
+	text-align: center;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/scroll.png);
+  background-size: contain;
+  	-webkit-animation: scroll 1.2s infinite;
+					animation: scroll 1.2s infinite;
+}
+
+.milestone .number{
+    color: #000 !important;
+}

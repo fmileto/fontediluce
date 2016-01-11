@@ -1,0 +1,67 @@
+/*   
+Template Name: Color Admin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.1
+Version: 1.5.0
+Author: Sean Ngu
+Website: http://www.seantheme.com/color-admin-v1.5/admin/
+*/
+
+.btn.btn-theme {
+    background: #ff5700;
+    border-color: #ff5700;
+    color: #fff;
+}
+.btn.btn-theme:hover,
+.btn.btn-theme:focus {
+    background: #ff9056;
+    border-color: #ff9056;
+}
+.header.navbar .navbar-nav > li.active > a, 
+.header.navbar .navbar-nav > li > a:hover, 
+.header.navbar .navbar-nav > li > a:focus,
+.header.navbar.navbar-default .navbar-nav > li.active > a, 
+.header.navbar.navbar-default .navbar-nav > li > a:hover, 
+.header.navbar.navbar-default .navbar-nav > li > a:focus,
+.header.navbar.navbar-transparent .navbar-nav > li.active > a, 
+.header.navbar.navbar-transparent .navbar-nav > li > a:hover, 
+.header.navbar.navbar-transparent .navbar-nav > li > a:focus,
+.header.navbar.navbar-inverse .navbar-nav > li.active > a, 
+.header.navbar.navbar-inverse .navbar-nav > li > a:hover, 
+.header.navbar.navbar-inverse .navbar-nav > li > a:focus,
+.header.navbar.navbar-transparent.navbar-small .navbar-nav > li.active > a,
+.header.navbar.navbar-transparent.navbar-small .navbar-nav > li > a:hover,
+.header.navbar.navbar-transparent.navbar-small .navbar-nav > li > a:focus,
+.text-theme,
+.navbar-nav .dropdown-menu > li.active > a,
+.navbar-nav .dropdown-menu > li > a:hover,
+.navbar-nav .dropdown-menu > li > a:focus,
+.pricing-table .price .price-number,
+a {
+    color: #ff5700;
+}
+a:hover,
+a:focus {
+    color: #ff9056;
+}
+.pricing-table .highlight h3,
+.pace-progress {
+    background: #CF4700;
+}
+.pricing-table .highlight .price {
+    background: #ff5700;
+}
+.pace .pace-activity {
+    border-top-color: #ff5700;
+    border-left-color: #ff5700;
+}
+.brand-logo,
+.footer .footer-brand-logo {
+    border-color: #DF8F19 #ff9056 #935e10;
+}
+.progress-bar.progress-bar-warning {
+    background-color: #ff5700;
+}
+.form-control:focus {
+border-color: #ff5700;
+-webkit-box-shadow: none;
+box-shadow: none;
+}

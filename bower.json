@@ -1,0 +1,25 @@
+{
+  "name": "fontediluce",
+  "version": "1.0.0",
+  "authors": [
+    "fmileto <mileto.francesco@gmail.com>"
+  ],
+  "description": "fonte di luce website for Piero Fantastichini",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "font-awesome": "fontawesome#~4.4.0",
+    "scrollMonitor": "~1.0.12",
+    "PACE": "pace#~1.0.2",
+    "owlcarousel": "~1.3.2"
+  }
+}
