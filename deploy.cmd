@@ -100,25 +100,19 @@ call :SelectNodeVersion
 :: 3. Install npm packages
 IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   pushd "%DEPLOYMENT_TARGET%"
-  call :ExecuteCmd npm install
+  call :ExecuteCmd !NPM_CMD! install
   IF !ERRORLEVEL! NEQ 0 goto error
+  popd
 )
 
-echo Installing bower packages: Starting %TIME%
-call :ExecuteCmd "bower" install
-echo Installing bower packages: Finished %TIME%
-IF !ERRORLEVEL! NEQ 0 goto error
-
-
-:: 4. Build the webclient
-::IF EXIST "%DEPLOYMENT_TARGET%\gulpfile.js" (
-::  echo Running Gulp: Starting %TIME%
-::  call :ExecuteCmd "gulp build"
-::  echo Running Gulp: Finished %TIME%
-::  
-::  IF !ERRORLEVEL! NEQ 0 goto error
-::  popd
-::)
+:: 4 gulp
+::IF EXIST "Gulpfile.js" (
+:: pushd "%DEPLOYMENT_TARGET%"
+:: call .\node_modules\.bin\gulp
+:: IF !ERRORLEVEL! NEQ 0 goto error
+:: popd
+:: 
+:: )
 
 :: 5 bower
 IF EXIST "bower.json" (
