@@ -111,14 +111,23 @@ IF !ERRORLEVEL! NEQ 0 goto error
 
 
 :: 4. Build the webclient
-IF EXIST "%DEPLOYMENT_TARGET%\gulpfile.js" (
-  echo Running Gulp: Starting %TIME%
-  call :ExecuteCmd "gulp build"
-  echo Running Gulp: Finished %TIME%
-  
-  IF !ERRORLEVEL! NEQ 0 goto error
-  popd
-)
+::IF EXIST "%DEPLOYMENT_TARGET%\gulpfile.js" (
+::  echo Running Gulp: Starting %TIME%
+::  call :ExecuteCmd "gulp build"
+::  echo Running Gulp: Finished %TIME%
+::  
+::  IF !ERRORLEVEL! NEQ 0 goto error
+::  popd
+::)
+
+:: 5 bower
+IF EXIST "bower.json" (
+ pushd "%DEPLOYMENT_TARGET%"
+ call .\node_modules\.bin\bower install
+ IF !ERRORLEVEL! NEQ 0 goto error
+ popd
+ 
+ )
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 

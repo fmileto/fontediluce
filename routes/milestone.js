@@ -21,6 +21,7 @@ module.exports = function (app) {
                     var today = new Date();
                     var deadline = new Date(item.deadline*1000);
                     var daystogo = Math.round((deadline-today)/(1000*60*60*24));
+                    daystogo = daystogo < 0 ? 0 : daystogo;
                     var funded = parseFloat(((pledged / goal) * 100).toFixed(2));
                     var result = {
                         pledged: pledged,
